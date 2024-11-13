@@ -235,7 +235,7 @@ header {
 
     @media (max-width: 65.25rem) {
       flex-direction: row;
-      padding: 64px 128px;
+      padding: unset;
     }
 
     & .action {
@@ -249,6 +249,10 @@ header {
     h2,
     button {
       text-transform: uppercase;
+
+      @media (max-width: 65.25rem) {
+        width: 50%;
+      }
     }
 
     button {
@@ -321,6 +325,7 @@ header {
       align-self: unset;
       min-width: 50%;
       margin-top: 20px;
+      font-size: 1.2rem;
     }
 
     @media (max-width: 41.25rem) {
@@ -410,6 +415,11 @@ header {
       & .description {
         padding-top: 16px;
         padding-left: 32px;
+
+        @media (max-width: 65.25rem) {
+          font-size: 1.2rem;
+          padding-left: unset;
+        }
       }
     }
   }
@@ -497,6 +507,10 @@ header {
 
     img {
       width: 30%;
+
+      @media (max-width: 62.25rem) {
+        width: 100%;
+      }
     }
 
     .description {
